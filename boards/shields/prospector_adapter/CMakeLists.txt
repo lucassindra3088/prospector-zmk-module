@@ -12,6 +12,7 @@ if(CONFIG_SHIELD_PROSPECTOR_ADAPTER)
   zephyr_library_sources(src/brightness.c)
   zephyr_library_sources(src/custom_status_screen.c)
   zephyr_library_sources(src/display_rotate_init.c)
+  zephyr_library_sources(src/display_idle.c)
 
   if(CONFIG_PROSPECTOR_SHOW_MODIFIERS)
     zephyr_library_sources(src/modifier_order.c)
