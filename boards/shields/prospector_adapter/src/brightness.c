@@ -6,11 +6,10 @@
 #include <zephyr/sys/printk.h>
 #include <math.h>
 #include <stdlib.h>
-
+#include <display_power.h>
 #include <zephyr/logging/log.h>
-LOG_MODULE_REGISTER(als, 4);
 
-#include "prospector/display_power.h"
+LOG_MODULE_REGISTER(als, 4);
 
 static const struct device *pwm_leds_dev = DEVICE_DT_GET_ONE(pwm_leds);
 #define DISP_BL DT_NODE_CHILD_IDX(DT_NODELABEL(disp_bl))
